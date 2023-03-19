@@ -41,4 +41,8 @@ else
 fi
 
 # Clone required repo
-git clone 
+cd ~
+git clone git@github.com:theCyberTech/.dotfiles.git
+chmod +x .dotfiles/symlink.sh
+./.dotfiles/sysmlink.sh
+
