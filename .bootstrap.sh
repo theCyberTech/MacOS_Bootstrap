@@ -30,6 +30,16 @@ else
     brew upgrade git
 fi
 
+# Check if starship is installed
+if ! command -v starship &> /dev/null
+then
+    echo "starship not found, Installing."
+    brew install starship
+else
+    echo "starship already installed, Updating"
+    brew upgrade starship
+fi
+
 # Check if stow is installed
 if ! command -v stow &> /dev/null
 then
